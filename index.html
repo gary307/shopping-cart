@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<style>
+    .shopping-cart {
+        width: 100%;
+        border: 1px solid black;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .shopping-cart div {
+        display: table;
+        cursor: pointer;
+    }
+
+    .shopping-cart div div {
+        padding: 10px;
+        display: inline-block;
+    }
+
+    .basket {
+        width: 100%;
+        border: 1px solid black;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .basket div {
+        padding: 10px;
+    }
+
+    .total {
+        padding: 10px;
+        font-size: 23px;
+    }
+</style>
+
+<body>
+
+    <h1>Items</h1>
+    <p>note: Click on an item to add it to your basket</p>
+    <div class='shopping-cart' id='shoppingCart'>
+    </div>
+
+    <h1>Basket</h1>
+    <p>note: Click on an item to remove it to your basket</p>
+    <div class='basket' id='basket'></div>
+
+
+    <div class='total'>
+        <span>
+            Total:
+        </span>
+        <span id='totalPrice'>0.00</span>
+    </div>
+
+</body>
+
+<!-- <script src="bundle.js"></script> -->
+
+</html>
